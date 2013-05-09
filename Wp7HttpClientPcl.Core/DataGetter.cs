@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Net;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,6 +11,7 @@ namespace Wp7HttpClientPcl.Core
 {
     public class DataGetter
     {
+
         public async static Task<string> GetSomeEarthquakeData()
         {
             var client = new HttpClient();
